@@ -48,6 +48,7 @@ const ModalComponent = () => {
       }
       else if (onlyBoard.length > 1 && boardData.length == 0) {
         return toast({
+          position:'bottom-right',
           title: 'Many boards have been detected.',
           description: "Select some any board in which you want to create task.",
           status: 'warning',
@@ -74,6 +75,7 @@ const ModalComponent = () => {
       onClose()
       formRef.current.reset();
       toast({
+        position:'bottom-right',
         title: 'New board has been added.',
         status: 'success',
         duration: 9000,
@@ -82,7 +84,8 @@ const ModalComponent = () => {
     }
     else {
       toast({
-        title: 'Create board first.',
+        position:'bottom-right',
+        title: 'Create Project first.',
         description: "Click on '+Create New Board' button.",
         status: 'error',
         duration: 9000,

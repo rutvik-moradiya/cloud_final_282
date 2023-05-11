@@ -48,6 +48,7 @@ const Std_TaskShower = ({ description, title, subtask, id, status, index }) => {
                }
                dispatch(updateTaskAction(id, cred, boardData[0]._id))
                toast({
+                    position:'bottom-right',
                     title: 'Task has been updated.',
                     status: 'success',
                     duration: 5000,
@@ -56,6 +57,7 @@ const Std_TaskShower = ({ description, title, subtask, id, status, index }) => {
                setInputTaskToggle(!inputTaskToggle)
           } else {
                toast({
+                    position:'bottom-right',
                     title: 'Please fill all the fields.',
                     status: 'error',
                     duration: 5000,
@@ -66,6 +68,7 @@ const Std_TaskShower = ({ description, title, subtask, id, status, index }) => {
      const handleDeleteTask = (id) => {
           dispatch(deleteTaskAction(id, boardData[0]._id))
           toast({
+               position:'bottom-right',
                title: 'Task has been deleted.',
                status: 'success',
                duration: 5000,
@@ -76,6 +79,7 @@ const Std_TaskShower = ({ description, title, subtask, id, status, index }) => {
      const handleChangeTask = () => {
           dispatch(updateTaskAction(id, { status: taskStatusRef.current.value }, boardData[0]._id))
           toast({
+               position:'bottom-right',
                title: 'Task has been deleted.',
                status: 'success',
                duration: 5000,

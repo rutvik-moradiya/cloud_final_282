@@ -17,6 +17,7 @@ const Subtask_Component = ({ element,taskId }) => {
   const handleStatusChange = (id) => {
     dispatch(changeSubtaskStatusAction(id, boardData[0]._id))
     toast({
+      position:'bottom-right',
       title: 'Status Updated',
       status: 'success',
       duration: 5000,
@@ -28,6 +29,7 @@ const Subtask_Component = ({ element,taskId }) => {
     let cred = { title: inputRef.current.value }
     dispatch(updateSubtaskAction(id, cred, boardData[0]._id))
     toast({
+      position:'bottom-right',
       title: 'Task Updated',
       status: 'success',
       duration: 5000,
@@ -40,6 +42,7 @@ const Subtask_Component = ({ element,taskId }) => {
   const handleDeleteSubtask = (id) =>{
       dispatch(deleteSubtaskAction(id,taskId,boardData[0]._id,))
       toast({
+        position:'bottom-right',
         title: 'Subtask has been deleted.',
         status: 'success',
         duration: 5000,

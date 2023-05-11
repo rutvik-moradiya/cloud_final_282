@@ -40,6 +40,7 @@ export default function Signup() {
         let res = await data.json()
         if(res.message == "signup successful"){
           toast({
+            position:'bottom-right',
             title:res.message,
             status: 'success',
             duration: 9000,
@@ -50,6 +51,7 @@ export default function Signup() {
         }
         else{
           toast({
+            position:'bottom-right',
             title:res.message,
             status: 'warning',
             duration: 9000,
@@ -60,6 +62,7 @@ export default function Signup() {
       }catch(err){
         setLoading(false)
         toast({
+          position:'bottom-right',
           title:'something went wrong.',
           description: err.message,
           status: 'error',
@@ -70,6 +73,7 @@ export default function Signup() {
     }else{
       setLoading(false)
       toast({
+        position:'bottom-right',
         title:'Please check your mail.',
         status: 'warning',
         duration: 5000,

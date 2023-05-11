@@ -31,7 +31,7 @@ import { useEffect, useRef, useState } from "react";
 import { RxCheck, RxCross2 } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
 import { BsGrid1X2Fill } from "react-icons/bs";
-import { FcBarChart } from "react-icons/fc";
+import {FcBarChart, FcCircuit} from "react-icons/fc";
 import { Suspense } from 'react';
 import "../styles.css";
 const homePageImage = "../../public/homeSvg.svg"
@@ -73,10 +73,10 @@ const Dashboard = () => {
           setDoingData([])
           setDoneData([])
           if (onlyBoard.length > 0) {
-               setCurrentBoard("Select Board")
+               setCurrentBoard("Select Project")
           }
           else {
-               setCurrentBoard("Create Board")
+               setCurrentBoard("Create Project")
           }
      }, [onlyBoard?.length])
 
@@ -88,6 +88,7 @@ const Dashboard = () => {
                boardInputRef.current.value = ""
           } else {
                toast({
+                    position:'bottom-right',
                     title: "Please fill all the fields.",
                     status: "warning",
                     duration: 9000,
@@ -109,6 +110,7 @@ const Dashboard = () => {
                     )
                );
                toast({
+                    position:'bottom-right',
                     title: "Board has been updated.",
                     status: "success",
                     duration: 9000,
@@ -117,6 +119,7 @@ const Dashboard = () => {
                setEditBoardToggle(0);
           } else {
                toast({
+                    position:'bottom-right',
                     title: "Please fill all the fields.",
                     status: "warning",
                     duration: 9000,
@@ -126,9 +129,10 @@ const Dashboard = () => {
      };
 
      const handleDeleteBoard = (id) => {
-          setCurrentBoard("Create Board")
+          setCurrentBoard("Create Project")
           dispatch(deleteBoardAction(id));
           toast({
+               position:'bottom-right',
                title: "Board has been deleted.",
                status: "success",
                duration: 9000,
@@ -158,8 +162,8 @@ const Dashboard = () => {
                <Box>
                     <Box className="navbar">
                          <Box>
-                              <FcBarChart />
-                              <Text>Kanban</Text>
+                              <FcCircuit />
+                              <Text>CMPE 282</Text>
                          </Box>
                          <Box>
                               <Text>{currentBoard}</Text>
@@ -263,8 +267,8 @@ const Dashboard = () => {
                                         gap="10px"
                                         height="100vh"
                                    >
-                                        <Image src='/homeSvg.svg' h="60%" />
-                                        <Heading textAlign="center">For seeing data click on any board if you have.</Heading>
+                                        <Image src='/sjsu.svg' h="60%" w="60%"/>
+                                        <Heading textAlign="center">CMPE 282 NetSpartans</Heading>
                                    </Box>
                                    :
                                    <DragDropContext

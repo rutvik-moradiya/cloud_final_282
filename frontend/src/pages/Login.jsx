@@ -44,6 +44,7 @@ export default function Login() {
       localStorage.setItem("loggedin_user", res.token)
       if(res.message=="login successful"){
         toast({
+          position:'bottom-right',
           title: res.message,
           status: 'success',
           duration: 5000,
@@ -53,6 +54,7 @@ export default function Login() {
       }
       else{
         toast({
+          position:'bottom-right',
           title: res.message,
           status: 'error',
           duration: 5000,
@@ -62,6 +64,7 @@ export default function Login() {
     } catch (err) {
       setLoading(false)
       toast({
+        position:'bottom-right',
         title: 'something went wrong.',
         description: err.message,
         status: 'error',
