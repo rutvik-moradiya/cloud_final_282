@@ -84,7 +84,7 @@ export default function Login() {
         <Stack align={'center'}>
           <Heading fontSize={'4xl'} textAlign={"center"}>Welcome to the Cloud board</Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
-            Manage your Projects and Tasks️ with spartans
+            Manage your Projects and Tasks️ with Spartans
           </Text>
         </Stack>
         <Box
