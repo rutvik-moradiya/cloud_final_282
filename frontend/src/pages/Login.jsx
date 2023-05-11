@@ -82,7 +82,7 @@ export default function Login() {
       bg={useColorModeValue('gray.50', 'gray.800')}>
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
-          <Heading fontSize={'4xl'} textAlign={"center"}>Welcome to the Cloud board</Heading>
+          <Heading fontSize={'4xl'} textAlign={"center"}>Welcome to the Cloud board SJSU</Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
             Manage your Projects and Tasks️ with Spartans
           </Text>
