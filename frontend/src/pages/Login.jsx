@@ -79,9 +79,9 @@ export default function Login() {
       bg={useColorModeValue('gray.50', 'gray.800')}>
       <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
         <Stack align={'center'}>
-          <Heading fontSize={'4xl'} textAlign={"center"}>Welcome to the Kanban board</Heading>
+          <Heading fontSize={'4xl'} textAlign={"center"}>Welcome to the Cloud board</Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
-            We are here to manage your tasks ✌️
+            Manage your Projects and Tasks️ with spartans
           </Text>
         </Stack>
         <Box
@@ -103,7 +103,7 @@ export default function Login() {
                 direction={{ base: 'column', sm: 'row' }}
                 align={'start'}
                 justify={'space-between'}>
-                <Link to="/signup">Don't Have Account</Link>
+                <Link to="/signup">Don't Have an Account</Link>
               </Stack>
               <Button
                 bg={'blue.400'}

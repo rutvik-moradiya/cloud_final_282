@@ -88,7 +88,7 @@ export default function Signup() {
         <Stack align={'center'}>
           <Heading fontSize={'4xl'}>Sign up to your account</Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
-            to enjoy all of our cool <Link color={'blue.400'}>features</Link> ✌️
+            to enjoy all of cloud project tasks <Link color={'blue.400'}>features</Link> ✌️
           </Text>
         </Stack>
         <Box
@@ -110,7 +110,7 @@ export default function Signup() {
                 direction={{ base: 'column', sm: 'row' }}
                 align={'start'}
                 justify={'space-between'}>
-                <Link to="/login">I Have an Account</Link>
+                <Link to="/login">Already a member</Link>
               </Stack>
               <Button
                 bg={'blue.400'}
@@ -120,7 +120,7 @@ export default function Signup() {
                 _hover={{
                   bg: 'blue.500',
                 }}>
-                Sign in
+                Sign Up Now
               </Button>
             </Stack>
           </Stack>
