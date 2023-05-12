@@ -84,7 +84,7 @@ export default function Login() {
         <Stack align={'center'}>
           <Heading fontSize={'4xl'} textAlign={"center"}>Welcome to the Cloud board SJSU</Heading>
           <Text fontSize={'lg'} color={'gray.600'}>
-            Manage your Projects and Tasks️ with SJSU
+            Manage your Projects and Tasks with SJSU
           </Text>
         </Stack>
         <Box
