@@ -268,7 +268,7 @@ const Dashboard = () => {
                                         height="100vh"
                                    >
                                         <Image src='/sjsu.svg' h="60%" w="60%"/>
-                                        <Heading textAlign="center">CMPE 282 NetSpartans Final Project</Heading>
+                                        <Heading textAlign="center">CMPE 282 NetSpartans 2023 SJSU NEw Update</Heading>
                                    </Box>
                                    :
                                    <DragDropContext
